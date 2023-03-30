@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Oswald:wght@700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
@@ -152,7 +154,7 @@
                 Довольных клиентов
             </h3>
             <p class="services__desc">
-                Результат — улыбка на лице и ощущение счастья            </p>
+                Результат — улыбка на лице и ощущение счастья </p>
         </article>
     </section>
 
@@ -173,7 +175,8 @@
             </h3>
         </article>
         <article class="services__item">
-            <img class="services__img" src="img/news-3.jpg" alt="8 советов, как оставаться продуктивным и не сойти с ума">
+            <img class="services__img" src="img/news-3.jpg"
+                 alt="8 советов, как оставаться продуктивным и не сойти с ума">
             <h3 class="services__title">
                 8 советов, как оставаться продуктивным и не сойти с ума
             </h3>
@@ -190,14 +193,125 @@
         <textarea class="contact-form__input contact-form__input_textarea"></textarea>
 
         <label class="contact-form__checkbox">
-            <input type="checkbox">
-            Я согласен с политикой конфиденциальности
+            <input type="checkbox" class="contact-form__checkbox-input visually-hidden" required
+                   value="agree with policy">
+            <span class="contact-form__checkbox-label">
+                Я согласен с политикой конфиденциальности
+            </span>
+            <span class="contact-form__checkbox-error">
+                це обов'язкове поле
+            </span>
         </label>
 
         <button class="btn" type="submit">
             Отправить
         </button>
     </form>
+
+    <section class="center reviews">
+        <h2 class="subtitle">
+            Отзывы клиентов
+        </h2>
+
+        <div class="slider">
+            <button class="slider__btn slider__btn_prev">
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            </button>
+            <div class="slider__list">
+                <article class="slider__item slider__item_active">
+                    <div class="slider__photo">
+                        <img src="img/girl.jpg" alt="Марина, 25 лет">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+                <article class="slider__item">
+                    <div class="slider__photo">
+                        <img src="img/about-photo.jpg" alt="Марина, 25 лет">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+                <article class="slider__item">
+                    <div class="slider__photo">
+                        <img src="img/photo-to-main-offer.jpg" alt="Марина, 25 лет">
+                    </div>
+                    <h4 class="slider__info">
+                        Марина, 25 лет
+                    </h4>
+                    <p class="slider__text">
+                        Обратилась к Сергею, потому что нервы уже были на пределе. Ситуация казалась мне безвыходной –
+                        несмотря на то, что я работаю и учусь. Сама не заметила, как избавилась от огромного кома.
+                        Наконец-то увидела выход из сложившейся ситуации и теперь есть надежда... Большое спасибо
+                        Валентину.
+                    </p>
+                </article>
+            </div>
+            <button class="slider__btn slider__btn_next">
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+        </div>
+    </section>
+
+    <label class="select">
+        <select class="select__input" name="" id="">
+            <option value="1">вариант 1</option>
+            <option value="2">вариант 2</option>
+            <option value="3">вариант 3</option>
+            <option value="4">вариант 4</option>
+            <option value="5">вариант 5</option>
+        </select>
+
+        <span class="select__arrow material-symbols-outlined">
+            arrow_drop_down
+        </span>
+    </label>
+
+    <section class="faq center">
+        <h2 class="subtitle">
+            Частые вопросы
+        </h2>
+
+        <details class="faq__item" open>
+            <summary class="faq__title">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+                <h3>Какой у вас график работы?</h3>
+            </summary>
+            <article class="faq__answer">
+                Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в
+                любой день с 9:00 до 21:00
+            </article>
+        </details>
+        <details class="faq__item">
+            <summary class="faq__title">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+                <h3>Какой у вас график работы?</h3>
+            </summary>
+            <article class="faq__answer">
+                Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в
+                любой день с 9:00 до 21:00
+            </article>
+        </details>
+
+    </section>
 </main>
 
 <footer class="footer center">
